@@ -33,8 +33,8 @@ function Item(){
             <div className='title'>
             <h2>{item.name}</h2>
             <p><span className={item.status === "Alive" ? 'green' : item.status === "Dead" ? 'red' : 'gray'}></span> {item.status} - {item.species}</p>
-            <p>Genero: {item.gender}</p>
-            <p>Planeta: {item.location.name}</p>
+            <p>Gender: {item.gender}</p>
+            <p>Planet: {item.location.name}</p>
             </div>
         </div>
       </div>

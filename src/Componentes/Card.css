@@ -1,0 +1,40 @@
+.container{
+    background-color: #3C3E44;
+    border-radius: 10px;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 125px;
+    padding: 20px;
+    max-width: 300px;
+}
+img{
+    border-radius:10px 10px 0 0 ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+}
+p span{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+.green{
+    background-color: rgb(16, 171, 16);
+}
+.red{
+    background-color: red;
+}
+.gray{
+    background-color: gray;
+}

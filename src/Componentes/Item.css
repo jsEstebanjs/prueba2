@@ -1,0 +1,11 @@
+.container-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202329;
+    height: 100vh;
+}
+h2{
+    color: white;
+    text-align: center;
+}

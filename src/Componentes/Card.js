@@ -11,7 +11,7 @@ function Card({img,name,status,species,classe,id,description}){
             className='container-img'/>
             <div className='info-container'>
                 <div className='title'>
-                <Link to={`/${id}`} target='_blank'><h2>{name}</h2></Link>
+                <Link to={`/${id}`}><h2>{name}</h2></Link>
                 <p><span className={classe}></span> {status} - {species}</p>
                 </div>
             </div>

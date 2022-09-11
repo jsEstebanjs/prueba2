@@ -1,16 +1,16 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import '../Componentes/Item.css';
 
 
 function Item(){
     const [item,setItem] = useState([])
     const [loading, setLoading] = useState(true);
-    const location = useLocation();
+    const params = useParams();
     useEffect(() => {
-      axios.get(`${process.env.REACT_APP_API}${location.pathname}`)
+      axios.get(`${process.env.REACT_APP_API}/${params.name}`)
         .then((res) => {
           setItem(res.data)
           
@@ -20,7 +20,6 @@ function Item(){
           setLoading(false)
         })
     }, []);
-    console.log(item)
     return (
         <div className='container-item'>
         {loading ? <p>Loading...</p> : 

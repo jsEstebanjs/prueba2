@@ -13,7 +13,7 @@ function App() {
       </nav>
     <Routes>
       <Route path='/' exact element={<Home/>}/>
-      <Route path=':name' exact element={<Item/>}/>
+      <Route path='/character/:name' exact element={<Item/>}/>
       <Route path='*' exact element={<NotFound/>}/>
     </Routes>
     </div>
